@@ -1,4 +1,4 @@
-package `11oop`.class_object
+package `11_oop`.`1_class_object`
 
 fun main(args: Array<String>){
 
