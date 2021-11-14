@@ -7,11 +7,11 @@ fun main() {
 
 class MyCustomClass{
     companion object{
-        var count: Int = -1
-
         init {
             println("init")
         }
+
+        var count: Int = -1
 
         @JvmStatic
         fun typeOfCustomer(name: String?): String {

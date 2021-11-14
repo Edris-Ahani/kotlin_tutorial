@@ -13,9 +13,20 @@ fun main() {
     myloop@for(i in 1..3){
          for(j in 1..4){
             if(i == 2 && j==2){
-                continue@myloop
+                continue
             }
              println("$i, $j")
+        }
+    }
+
+    println("====================================================")
+
+    myloop@for(i in 1..3){
+        for(j in 1..4){
+            if(i == 2 && j==2){
+                continue@myloop
+            }
+            println("$i, $j")
         }
     }
 }

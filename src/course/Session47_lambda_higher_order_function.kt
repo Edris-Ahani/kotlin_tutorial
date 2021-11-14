@@ -4,11 +4,15 @@ fun main() {
     var program = Program()
     program.addTwoNumbers(2, 5)
 
+    println("===================================================")
+
     program.addTwoNumbers(2,5, object : MyInterface{
         override fun execute(sum: Int) {
             println(sum)
         }
     })
+
+    println("===================================================")
 
     val myLambda: (Int) -> Unit = { s: Int ->  println(s)} // Lambda Expression (function)
     program.addTwoNumbers(2, 5, myLambda)

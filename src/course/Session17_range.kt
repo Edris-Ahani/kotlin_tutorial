@@ -6,7 +6,7 @@ fun main() {
     var recursiveRange1 = 10 downTo 1 // 10 to 1
     var recursiveRange2 = 5 downTo 1 step 2  //5, 3, 1
     var range2 = "a".."z" // "a" to "z"
-    var range3 = 'A'..'Z'   // 'A' to 'A'
+    var range3 = 'A'..'Z'   // 'A' to 'Z'
     var range4 = 'A'..'z'   // 'A' to 'z'
 
     var isPresent = 'a' in range3
@@ -16,10 +16,18 @@ fun main() {
     var countDown = 10.downTo(1)
     println(countDown)
     var moveUp = 1.rangeTo(10)
-    print(moveUp)
+    println(moveUp)
 
 
     for (count in 10 downTo 1){
+        println(count)
+    }
+    println("//////////////////////////////")
+    for (count in countDown){
+        println(count)
+    }
+    println("//////////////////////////////")
+    for (count in moveUp){
         println(count)
     }
 }
